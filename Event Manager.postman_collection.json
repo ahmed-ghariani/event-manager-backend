@@ -199,8 +199,49 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"event2\",\r\n    \"date\": \"2023-01-02T10:30:00.000Z\",\r\n    \"organizers\":[\r\n        \"organizer1\",\r\n        \"organizer2\"\r\n    ],\r\n    \"description\": \"description\",\r\n    \"place\": \"place2\"\r\n}",
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test with pic",
+									"type": "default"
+								},
+								{
+									"key": "date",
+									"value": "2023-01-02T10:30:00.000Z",
+									"type": "default"
+								},
+								{
+									"key": "organizers",
+									"value": "organizer1",
+									"type": "default"
+								},
+								{
+									"key": "organizers",
+									"value": "organizer2",
+									"type": "default"
+								},
+								{
+									"key": "organizers",
+									"value": "organizer3",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "description",
+									"type": "default"
+								},
+								{
+									"key": "place",
+									"value": "tunis",
+									"type": "default"
+								},
+								{
+									"key": "pic",
+									"type": "file",
+									"src": []
+								}
+							],
 							"options": {
 								"raw": {
 									"language": "json"

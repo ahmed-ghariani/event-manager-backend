@@ -12,7 +12,7 @@ const eventSchema = new mongoose.Schema({
     },
     organizers: {
         type: [String],
-        default: undefined
+        default: []
     },
     description: {
         type: String
@@ -20,6 +20,11 @@ const eventSchema = new mongoose.Schema({
     place: {
         type: String,
         required: [ true, "A place is missing" ]
+    },
+    pic:{
+        data: Buffer,
+        name: String,
+        contentType: String
     }
 });
 
